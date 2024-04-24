@@ -119,16 +119,16 @@ const flktyReviews = new Flickity(galleryReviews, {
   },
 });
 
-const imgsReviews = galleryReviews.getElementById('.carousel-cell img');
-// get transform property
-const docStyleReviews = document.documentElement.style;
-const transformPropReviews = typeof docStyleReviews.transform == 'string' ?
-  'transform' : 'WebkitTransform';
+//const imgsReviews = galleryReviews.querySelectorAll('.carousel-cell img');
+//// get transform property
+//const docStyleReviews = document.documentElement.style;
+//const transformPropReviews = typeof docStyleReviews.transform == 'string' ?
+//  'transform' : 'WebkitTransform';
 
-flktyReviews.on('scroll', function () {
-  flktyBReviews.slides.forEach(function (slide, i) {
-    const imgReviews = imgsReviews[i];
-    const x = (slide.target + flktyReviews.x) * -1 / 3;
-    imgReviews.style[transformPropReviews] = 'translateX(' + x + 'px)';
-  });
-});
+//flktyReviews.on('scroll', function () {
+//  flktyReviews.slides.forEach(function (slide, i) {
+//    const imgReviews = imgsReviews[i];
+//    const x = (slide.target + flktyReviews.x) * -1 / 3;
+//    imgReviews.style[transformPropReviews] = 'translateX(' + x + 'px)';
+//  });
+//});
