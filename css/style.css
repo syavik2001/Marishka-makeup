@@ -248,7 +248,7 @@ section {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
-	width: 300px;
+	width: 150px;
 	margin-top: 2rem;
 }
 
@@ -435,10 +435,7 @@ span {
 }
 
 .portfolio {
-	/*position: relative;*/
-	/*height: 100vh;*/
 	width: 100vw;
-	/*overflow: hidden;*/
 }
 
 .portfolio p {
@@ -570,7 +567,82 @@ span {
 	padding-bottom: 7rem;
 }
 
-.contact form {
+.contact p {
+	color: var(--main-color);
+	position: relative;
+	font-size: 1.6rem;
+	margin: 2rem 0 5rem;
+	text-align: center;
+}
+
+.contact-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-sci {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 300px;
+	margin-top: 2rem;
+}
+
+.sci-a {
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	/*margin: 10px 0;*/
+	width: 60px;
+	height: 60px;
+	background: transparent;
+	border: 0.2rem solid var(--main-color);
+	border-radius: 50%;
+	font-size: 36px;
+	color: var(--main-color);
+	z-index: 1;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+.sci-a:hover {
+	color: var(--bg-color);
+}
+
+.sci-a::before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 100%;
+	background: var(--main-color);
+	left: 0;
+	top: 0;
+	z-index: -1;
+	transition: 0.5s;
+}
+
+.sci-a:hover::before {
+	width: 100%;
+}
+
+.sci {
+	display: flex;
+	margin-bottom: 3rem;
+}
+
+.sci p {
+	font-size: 2.8rem;
+	margin: 1rem 0 auto 1rem;
+}
+.phone p {
+	margin: -1rem 0 0 1rem;
+}
+
+/*.contact form {
 	max-width: 70rem;
 	text-align: center;
 	margin: 0 auto;
@@ -636,7 +708,7 @@ span {
 }
 .contact form .btn-box.btns .btn {
 	cursor: pointer;
-}
+}*/
 
 .footer {
 	display: flex;
@@ -914,7 +986,7 @@ section:nth-child(odd) .animate.scroll {
 	}
 
 	.home-sci {
-		width: 220px;
+		width: 110px;
 	}
 
 	.home-sci a {
