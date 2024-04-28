@@ -17,14 +17,14 @@ ScrollTrigger.defaults({ smoothScrolling: false });
 let itemsL = gsap.utils.toArray('.gallery__left .gallery__item')
 
 itemsL.forEach(item => {
-  gsap.fromTo(item, { opacity: 0, x: -150 }, {
+  gsap.fromTo(item, { opacity: 0, x: -250 }, {
     opacity: 1, x: -10,
     scrollTrigger: {
       trigger: item,
       start: '-1150',
       end: '-200',
-      scrub: true,
-      smoothScrolling: false
+      //scrub: true,
+      //smoothScrolling: false
     }
   })
 })
@@ -32,14 +32,14 @@ itemsL.forEach(item => {
 let itemsR = gsap.utils.toArray('.gallery__right .gallery__item')
 
 itemsR.forEach(item => {
-  gsap.fromTo(item, { opacity: 0, x: 150 }, {
+  gsap.fromTo(item, { opacity: 0, x: 250 }, {
     opacity: 1, x: 10,
     scrollTrigger: {
       trigger: item,
       start: '-1050',
       end: '-200',
-      scrub: true,
-      smoothScrolling: false
+      //scrub: true,
+      //smoothScrolling: false
     }
   })
 })
