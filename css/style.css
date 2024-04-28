@@ -7,7 +7,7 @@
 	text-decoration: none;
 	border: none;
 	outline: none;
-	/*scroll-behavior: smooth;*/
+	scroll-behavior: smooth;
 	font-family: "Poppins", sans-serif;
 }
 :root {
@@ -41,7 +41,9 @@ body {
 	opacity: 0.1; 
 }
 */
-
+.section-without-smooth-scroll {
+	scroll-behavior: auto; /* Отключаем плавную прокрутку для этой секции */
+}
 .header {
 	position: fixed;
 	top: 0;
