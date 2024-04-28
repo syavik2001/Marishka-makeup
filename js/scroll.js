@@ -7,8 +7,8 @@ gsap.fromTo('.about-portfolio', { opacity: 1 }, {
   opacity: 1,
   scrollTrigger: {
     trigger: '.container',
-    start: '100px',
-    //end: '3420',
+    start: '0px',
+    end: 'top',
     scrub: true,
     smoothScrolling: false
   }
@@ -21,8 +21,8 @@ itemsL.forEach(item => {
     opacity: 1, x: -10,
     scrollTrigger: {
       trigger: item,
-      start: '-1350',
-      end: '-300',
+      start: '-1150',
+      end: '-200',
       scrub: true,
       smoothScrolling: false
     }
@@ -36,8 +36,8 @@ itemsR.forEach(item => {
     opacity: 1, x: 10,
     scrollTrigger: {
       trigger: item,
-      start: '-1250',
-      end: '-300',
+      start: '-1050',
+      end: '-200',
       scrub: true,
       smoothScrolling: false
     }
