@@ -9,7 +9,8 @@ gsap.fromTo('.about-content', { opacity: 1 }, {
     trigger: '.container',
     start: 'center',
     end: '820',
-    scrub: true
+    scrub: true,
+    smoothScrolling: false
   }
 })
 
