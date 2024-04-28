@@ -23,7 +23,8 @@ itemsL.forEach(item => {
       trigger: item,
       start: '-1350',
       end: '-300',
-      scrub: true
+      scrub: true,
+      smoothScrolling: false
     }
   })
 })
@@ -37,7 +38,8 @@ itemsR.forEach(item => {
       trigger: item,
       start: '-1250',
       end: '-300',
-      scrub: true
+      scrub: true,
+      smoothScrolling: false
     }
   })
 })
