@@ -7,7 +7,7 @@
 	text-decoration: none;
 	border: none;
 	outline: none;
-	scroll-behavior: smooth;
+	/*scroll-behavior: smooth;*/
 	font-family: "Poppins", sans-serif;
 }
 :root {
@@ -29,6 +29,7 @@ html {
 body {
 	background: var(--bg-color);
 	color: var(--text-color);
+	scroll-behavior: smooth;
 }
 
 /*.body-image {
