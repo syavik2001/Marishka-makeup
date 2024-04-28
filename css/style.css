@@ -986,17 +986,15 @@ section:nth-child(odd) .animate.scroll {
 		flex-direction: column;
 	}
 
-	.home-sci {
-		width: 110px;
-	}
-
 	.home-sci a {
 		width: 48px;
 		height: 48px;
 	}
 	.home-sci {
 		position: absolute;
-		bottom: 2rem;
+		bottom: 1rem;
+		margin: 1rem 0;
+		width: 110px;
 	}
 	.about-img {
 		width: 35rem;
