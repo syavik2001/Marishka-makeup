@@ -1008,6 +1008,9 @@ section:nth-child(odd) .animate.scroll {
 }
 
 @media (max-width: 462px) {
+	.home {
+		padding: 0 2%;
+	}
 	.home .home-content h1 {
 		flex-direction: row;
 	}
