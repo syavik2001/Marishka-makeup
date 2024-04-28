@@ -11,14 +11,12 @@ menuIcon.onclick = () => {
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
-let header = document.querySelector('header');
-// Проверяем, что документ был прокручен вниз более чем на 100 пикселей,
-// чтобы избежать автоматической прокрутки при загрузке страницы.
-if (window.scrollY > 100 || window.pageYOffset > 100) {
-    header.classList.add('sticky');
-} else {
-    header.classList.remove('sticky');
-}
+//let header = document.querySelector('header');
+//if (window.scrollY > 100 || window.pageYOffset > 100) {
+//    header.classList.add('sticky');
+//} else {
+//    header.classList.remove('sticky');
+//}
 window.onscroll = () => {
     sections.forEach(sec => {
         let top = window.scrollY;
