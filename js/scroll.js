@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
-ScrollTrigger.defaults({ smoothScrolling: false });
+//ScrollTrigger.defaults({ smoothScrolling: false });
 
 
 //gsap.fromTo('.about-portfolio', { opacity: 1 }, {
@@ -23,8 +23,8 @@ itemsL.forEach(item => {
       trigger: item,
       start: '-1150',
       end: '-200',
-      //scrub: true,
-      //smoothScrolling: false
+      scrub: true,
+      smoothScrolling: false
     }
   })
 })
@@ -38,8 +38,8 @@ itemsR.forEach(item => {
       trigger: item,
       start: '-1050',
       end: '-200',
-      //scrub: true,
-      //smoothScrolling: false
+      scrub: true,
+      smoothScrolling: false
     }
   })
 })
