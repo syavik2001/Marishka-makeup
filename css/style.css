@@ -1008,8 +1008,14 @@ section:nth-child(odd) .animate.scroll {
 }
 
 @media (max-width: 462px) {
+	.home .home-content h1 {
+		flex-direction: row;
+	}
 	.home-content h1 {
-		font-size: 5.2rem;
+		font-size: 4.2rem;
+	}
+	.home-img1200 {
+		margin-top: 1rem;
 	}
 	.gallery__item {
 		max-width: calc(var(--index) * 13);
