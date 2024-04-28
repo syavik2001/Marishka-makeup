@@ -39,7 +39,7 @@ window.onscroll = () => {
     });
 
     // sticky header
-    header.classList.toggle('sticky', window.scrollY > 100 || window.pageYOffset > 100);
+    //header.classList.toggle('sticky', window.scrollY > 100 || window.pageYOffset > 100);
 
     // remove toggle icon and navbar when click navbar links (scroll)
     menuIcon.classList.remove('bx-x');
