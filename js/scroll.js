@@ -1,6 +1,6 @@
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+gsap.registerPlugin(ScrollTrigger);
 
-ScrollTrigger.defaults({ smoothScrolling: true });
+ScrollTrigger.defaults({ smoothScrolling: false });
 
 
 gsap.fromTo('.about-content', { opacity: 1 }, {
