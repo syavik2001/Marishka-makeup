@@ -3,12 +3,12 @@ gsap.registerPlugin(ScrollTrigger);
 ScrollTrigger.defaults({ smoothScrolling: false });
 
 
-gsap.fromTo('.about-content', { opacity: 1 }, {
-  opacity: 0,
+gsap.fromTo('.about-portfolio', { opacity: 1 }, {
+  opacity: 1,
   scrollTrigger: {
     trigger: '.container',
-    start: 'center',
-    end: '820',
+    start: '100px',
+    //end: '3420',
     scrub: true,
     smoothScrolling: false
   }
