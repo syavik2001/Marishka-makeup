@@ -7,7 +7,7 @@
 document.addEventListener("DOMContentLoaded", (event) => {
   gsap.registerPlugin(ScrollTrigger)
   // gsap code here!
-  ScrollTrigger.defaults({ smoothScrolling: false });
+  //ScrollTrigger.defaults({ smoothScrolling: false });
   let itemsL = gsap.utils.toArray('.gallery__left .gallery__item')
 
   itemsL.forEach(item => {
@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
       opacity: 1, x: -10,
       scrollTrigger: {
         trigger: item,
-        start: '-1150',
-        end: '-200',
+        start: '-1150px',
+        end: '-200px',
         scrub: true,
       }
     })
@@ -29,8 +29,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
       opacity: 1, x: 10,
       scrollTrigger: {
         trigger: item,
-        start: '-1050',
-        end: '-200',
+        start: '-1050px',
+        end: '-200px',
         scrub: true,
       }
     })
