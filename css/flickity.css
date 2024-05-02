@@ -241,3 +241,15 @@
 		height: 150px;
 	}
 }
+
+@media (max-width: 400px) {
+	.wrapper-carousel {
+		width: 350px;
+		height: 250px;
+		border: 2px solid var(--main-color);
+	}
+	.img-responsive {
+		height: 220px;
+		width: auto;
+	}
+}
