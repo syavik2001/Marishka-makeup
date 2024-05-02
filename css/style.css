@@ -1037,13 +1037,13 @@ section:nth-child(odd) .animate.scroll {
 		margin-top: 1rem;
 	}
 	.gallery__item {
-		max-width: calc(var(--index) * 13);
+		max-width: calc(var(--index) * 14);
 	}
 	.gallery__right {
 		margin-top: calc(var(--gallery-gap) * -1.1);
 	}
 	.gallery__right .gallery__item {
-		margin-top: calc(var(--index) * 13);
+		margin-top: calc(var(--index) * 14);
 	}
 	.short {
 		display: none;
