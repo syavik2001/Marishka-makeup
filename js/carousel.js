@@ -1,6 +1,7 @@
 const galleryMakeup = document.getElementById('galleryMakeup');
 const flktyMakeup = new Flickity(galleryMakeup, {
   cellAlign: 'center',
+
   pageDots: false,
   contain: true,
   autoPlay: 2000,
@@ -12,6 +13,7 @@ const flktyMakeup = new Flickity(galleryMakeup, {
       //const container = document.querySelector('.flickity-slider');
       lightGallery(document.getElementById('galleryMakeup'), {
         selector: '.carousel-cell',
+        pager: false,
         plugins: [lgZoom, lgThumbnail],
       });
     },
@@ -23,6 +25,7 @@ const imgsMakeup = galleryMakeup.querySelectorAll('.carousel-cell img');
 const docStyleMakeup = document.documentElement.style;
 const transformPropMakeup = typeof docStyleMakeup.transform == 'string' ?
   'transform' : 'WebkitTransform';
+
 
 flktyMakeup.on('scroll', function () {
   flktyMakeup.slides.forEach(function (slide, i) {
@@ -119,16 +122,15 @@ const flktyReviews = new Flickity(galleryReviews, {
   },
 });
 
-//const imgsReviews = galleryReviews.querySelectorAll('.carousel-cell img');
-//// get transform property
-//const docStyleReviews = document.documentElement.style;
-//const transformPropReviews = typeof docStyleReviews.transform == 'string' ?
-//  'transform' : 'WebkitTransform';
 
-//flktyReviews.on('scroll', function () {
-//  flktyReviews.slides.forEach(function (slide, i) {
-//    const imgReviews = imgsReviews[i];
-//    const x = (slide.target + flktyReviews.x) * -1 / 3;
-//    imgReviews.style[transformPropReviews] = 'translateX(' + x + 'px)';
-//  });
-//});
+const lgs = document.querySelectorAll('.main-carousel');
+lgs.forEach(lg => {
+  lg.addEventListener('lgBeforeOpen', () => {
+    document.documentElement.classList.add('fullscreen-scroll-lock');
+    document.body.classList.add('fullscreen-scroll-lock');
+  });
+  lg.addEventListener('lgAfterClose', () => {
+    document.documentElement.classList.remove('fullscreen-scroll-lock');
+    document.body.classList.remove('fullscreen-scroll-lock');
+  });
+})

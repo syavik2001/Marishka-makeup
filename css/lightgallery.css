@@ -556,7 +556,7 @@ body:not(.lg-from-hash)
 	right: 0;
 	bottom: 0;
 	z-index: 1040;
-	background-color: rgba(0, 0, 0, 0.75);
+	background-color: rgba(0, 0, 0, 0.85);
 	opacity: 0;
 	will-change: auto;
 	-webkit-transition: opacity 333ms ease-in 0s;
