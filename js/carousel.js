@@ -35,7 +35,6 @@ flktyMakeup.on('scroll', function () {
   });
 });
 
-
 const galleryHair = document.getElementById('galleryHair');
 const flktyHair = new Flickity(galleryHair, {
   cellAlign: 'center',
@@ -68,7 +67,6 @@ flktyHair.on('scroll', function () {
     imgHair.style[transformPropHair] = 'translateX(' + x + 'px)';
   });
 });
-
 
 const galleryBrows = document.getElementById('galleryBrows');
 const flktyBrows = new Flickity(galleryBrows, {
@@ -121,7 +119,6 @@ const flktyReviews = new Flickity(galleryReviews, {
     },
   },
 });
-
 
 const lgs = document.querySelectorAll('.main-carousel');
 lgs.forEach(lg => {
